@@ -21,7 +21,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,8 +49,7 @@ class MainActivity : ComponentActivity() {
                 QuoteListScreen(data = DataManager.data) {
                     DataManager.switchPages(it)
                 }
-            }
-            else{
+            } else {
                 DataManager.currentQuote?.let { QuoteDetail(quote = it) }
             }
 
