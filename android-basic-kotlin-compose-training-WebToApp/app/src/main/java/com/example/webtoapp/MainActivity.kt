@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
                 webViewClient = WebViewClient()
             }
         }, update = {
-            it.loadUrl("https://neatroots.com/")
+            it.loadUrl("https://developer.android.com/")
         })
     }
 
